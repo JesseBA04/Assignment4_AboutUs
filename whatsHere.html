@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="off-canvas-wrapper">
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <!-- `grid-x` represents a row -->
+                <ul class="menu expanded">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutUs.html">About us</a></li>
+                    <li><a href="/projects.html">Project Demo</a></li>
+                    <li class="is-active"><a href="#">What was used</a></li>
+                </ul>
+
+                <!-- This will be where the text itself will be displayed-->
+                <div class="grid-x grid-padding-x">
+                    <div class="cell small-12 large-12 text" style="background-color: #000000;">
+                        <h1>What are the API's we used</h1>
+                        <p>We used 3 different API's in the making of this project the <a href="https://nominatim.org/" id = "website" target="_blank">Nominatim</a> API,
+                            the <a href="https://leafletjs.com/" id = "website" target="_blank">Leaflet</a> API, and our own <a href="https://github.com/majo9200/webdev-rest" id = "website" target="_blank">St. Paul Crime</a> API.
+                            Each solves a different problem for us.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <!--Project #1-->
+                    <div class="cell small-12 large-12 text">
+                        <h2>Nominatim</h2>
+                        <p>
+                            <p>
+                                This API is an open-source geocoding API. What that means is that it is useful for findng locations on Earth by name and address.
+                                We used this to be able to pinpoint a crimes location and to be able to fit it into its neighborhood. This allows us to know how many crimes 
+                                occured in each neighborhood
+                            </p>
+                        </p>
+                    </div>
+
+                    <div class="cell small-12 large-12 text">
+                        <h2>Leaflet</h2>
+                        <p>
+                            <p>
+                                This API is an open-source JavaScript library that allows for mobile-friendly interactive maps. Leaflet let us find St. Paul and use it 
+                                as out map for this project, which can be seen as the most pivotal part of the project. Leaflets' API was easy to use and allowed for a lot of customization
+                                that was otherwise not expected.
+                            </p>
+                        </p>
+                    </div>
+
+                    <div class="cell small-12 large-12 text">
+                        <h2>St. Paul Crime API</h2>
+                        <p>
+                            <p>
+                                This API was created by us 3 using sqlite3 and data from the St. Paul government. This API allows us to find any crime we want that occured in St Paul for the past 10 years.
+                                Due to the nature of its creation we are able to customize it however we want, but with current capabilities are able to use many search parameters to narrow down to the exact types of crime we want.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
